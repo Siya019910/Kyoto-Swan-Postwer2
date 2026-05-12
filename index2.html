@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { height: 100vh; margin: 0; overflow: hidden; background: #000; color: #fff; display: flex; flex-direction: column; align-items: center; text-align: center; }
+        .mosaic { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+        .img1, .img2, .img3 { position: absolute; width: 100%; height: 100%; background-size: cover; background-position: center; }
+        .img1 { clip-path: polygon(0 0, 100% 0, 0 40%); }
+        .img2 { clip-path: polygon(100% 0, 100% 100%, 0 40%); }
+        .img3 { clip-path: polygon(0 100%, 100% 100%, 0 40%); filter: sepia(0.5); }
+        
+        .biz-name { font-family: 'Brush Script MT', cursive; font-weight: bold; font-size: 2.8rem; margin-top: 40px; color: #a349e5; text-shadow: 0 0 10px #fff; }
+        .slogan { font-style: italic; background: rgba(0,0,0,0.6); padding: 10px; margin: 20px 0; border-left: 4px solid #a349e5; }
+        .qr-card { background: rgba(255,255,255,0.9); padding: 15px; border-radius: 10px; margin-top: auto; }
+        .services { font-style: italic; font-weight: bold; margin: 20px 0; color: #c0c0c0; }
+        footer { font-size: 0.6rem; padding: 10px; background: rgba(0,0,0,0.8); width: 100%; border-top: 1px solid #a349e5; }
+    </style>
+</head>
+<body>
+    <div class="mosaic">
+        <div class="img1" style="background-image: url('bg1.jpg');"></div>
+        <div class="img2" style="background-image: url('bg2.jpg');"></div>
+        <div class="img3" style="background-image: url('bg3.jpg');"></div>
+    </div>
+    <div class="biz-name">Kyoto Swan</div>
+    <p class="slogan">*"Redefining Beauty standards"*</p>
+    <div class="qr-card">
+        <img src="qrcode.png" style="width: 130px;">
+    </div>
+    <p class="services">*Precision Styling & Care*</p>
+    <footer>© TRADEMARK 2026 KYOTO SWAN</footer>
+</body>
+</html>
